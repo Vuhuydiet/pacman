@@ -1,0 +1,460 @@
+[
+    {
+        "label": "CELL_TYPES",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DIRECTIONS",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DIRECTIONS",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DIRECTIONS",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "importPath": "models.Map",
+        "description": "models.Map",
+        "isExtraImport": true,
+        "detail": "models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "queue",
+        "description": "queue",
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "Pacman",
+        "importPath": "models.MovingObject",
+        "description": "models.MovingObject",
+        "isExtraImport": true,
+        "detail": "models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "Pacman",
+        "importPath": "models.MovingObject",
+        "description": "models.MovingObject",
+        "isExtraImport": true,
+        "detail": "models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "Ghost",
+        "importPath": "models.MovingObject",
+        "description": "models.MovingObject",
+        "isExtraImport": true,
+        "detail": "models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "Ghost",
+        "importPath": "models.MovingObject",
+        "description": "models.MovingObject",
+        "isExtraImport": true,
+        "detail": "models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "Pacman",
+        "importPath": "models.MovingObject",
+        "description": "models.MovingObject",
+        "isExtraImport": true,
+        "detail": "models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "importPath": "moving_strategies",
+        "description": "moving_strategies",
+        "isExtraImport": true,
+        "detail": "moving_strategies",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "utils",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils",
+        "description": "utils",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "utils.game_logic",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils.game_logic",
+        "description": "utils.game_logic",
+        "detail": "utils.game_logic",
+        "documentation": {}
+    },
+    {
+        "label": "utils.load_map",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils.load_map",
+        "description": "utils.load_map",
+        "detail": "utils.load_map",
+        "documentation": {}
+    },
+    {
+        "label": "utils.renderer",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils.renderer",
+        "description": "utils.renderer",
+        "detail": "utils.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "user_input",
+        "importPath": "moving_strategies.user_input",
+        "description": "moving_strategies.user_input",
+        "isExtraImport": true,
+        "detail": "moving_strategies.user_input",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "importPath": "moving_strategies.bfs",
+        "description": "moving_strategies.bfs",
+        "isExtraImport": true,
+        "detail": "moving_strategies.bfs",
+        "documentation": {}
+    },
+    {
+        "label": "dfs",
+        "importPath": "moving_strategies.dfs",
+        "description": "moving_strategies.dfs",
+        "isExtraImport": true,
+        "detail": "moving_strategies.dfs",
+        "documentation": {}
+    },
+    {
+        "label": "ucs",
+        "importPath": "moving_strategies.ucs",
+        "description": "moving_strategies.ucs",
+        "isExtraImport": true,
+        "detail": "moving_strategies.ucs",
+        "documentation": {}
+    },
+    {
+        "label": "a_star",
+        "importPath": "moving_strategies.a_star",
+        "description": "moving_strategies.a_star",
+        "isExtraImport": true,
+        "detail": "moving_strategies.a_star",
+        "documentation": {}
+    },
+    {
+        "label": "Map",
+        "kind": 6,
+        "importPath": "src.models.Map",
+        "description": "src.models.Map",
+        "peekOfCode": "class Map:\n  def __init__(self, map: list[str]):\n    self.__map = [list(row) for row in map]\n    self.N = len(map)\n    self.M = len(map[0])\n  def contains_cell(self, cell: tuple[int, int]) -> bool:\n    x, y = cell\n    return 0 <= x < self.N and 0 <= y < self.M\n  def is_wall(self, cell: tuple[int, int]) -> bool:\n    if not self.contains_cell(cell):",
+        "detail": "src.models.Map",
+        "documentation": {}
+    },
+    {
+        "label": "MovingObject",
+        "kind": 6,
+        "importPath": "src.models.MovingObject",
+        "description": "src.models.MovingObject",
+        "peekOfCode": "class MovingObject:\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    self.position = initial_position\n    self.moving_strategy = moving_strategy\nclass Pacman(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    super().__init__(initial_position, moving_strategy)\n    self.lives = 3\n    self.score = 0\nclass Ghost(MovingObject):",
+        "detail": "src.models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "Pacman",
+        "kind": 6,
+        "importPath": "src.models.MovingObject",
+        "description": "src.models.MovingObject",
+        "peekOfCode": "class Pacman(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    super().__init__(initial_position, moving_strategy)\n    self.lives = 3\n    self.score = 0\nclass Ghost(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy, name):\n    super().__init__(initial_position, moving_strategy)\n    self.name = name",
+        "detail": "src.models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "Ghost",
+        "kind": 6,
+        "importPath": "src.models.MovingObject",
+        "description": "src.models.MovingObject",
+        "peekOfCode": "class Ghost(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy, name):\n    super().__init__(initial_position, moving_strategy)\n    self.name = name",
+        "detail": "src.models.MovingObject",
+        "documentation": {}
+    },
+    {
+        "label": "a_star",
+        "kind": 2,
+        "importPath": "src.moving_strategies.a_star",
+        "description": "src.moving_strategies.a_star",
+        "peekOfCode": "def a_star(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  return prev",
+        "detail": "src.moving_strategies.a_star",
+        "documentation": {}
+    },
+    {
+        "label": "bfs",
+        "kind": 2,
+        "importPath": "src.moving_strategies.bfs",
+        "description": "src.moving_strategies.bfs",
+        "peekOfCode": "def bfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  q = queue.Queue()\n  prev = {}\n  q.put(position)\n  prev[position] = position\n  while not q.empty():\n    current = q.get()\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or new_cell in prev or maze.is_wall(new_cell):",
+        "detail": "src.moving_strategies.bfs",
+        "documentation": {}
+    },
+    {
+        "label": "dfs",
+        "kind": 2,
+        "importPath": "src.moving_strategies.dfs",
+        "description": "src.moving_strategies.dfs",
+        "peekOfCode": "def dfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  def dfs_imp(current: tuple[int, int]) -> tuple[int, int]:\n    if current in restricted_cells:\n      return None\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or new_cell in prev or maze.is_wall(new_cell):\n        continue",
+        "detail": "src.moving_strategies.dfs",
+        "documentation": {}
+    },
+    {
+        "label": "move_randomly",
+        "kind": 2,
+        "importPath": "src.moving_strategies.random",
+        "description": "src.moving_strategies.random",
+        "peekOfCode": "def move_randomly(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  for d in DIRECTIONS.values():\n    new_cell = add(position, d)\n    if not maze.contains_cell(new_cell) or new_cell in prev or maze.is_wall(new_cell):\n      continue\n    if new_cell in restricted_cells:\n      continue\n    prev[new_cell] = position",
+        "detail": "src.moving_strategies.random",
+        "documentation": {}
+    },
+    {
+        "label": "ucs",
+        "kind": 2,
+        "importPath": "src.moving_strategies.ucs",
+        "description": "src.moving_strategies.ucs",
+        "peekOfCode": "def ucs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  return prev",
+        "detail": "src.moving_strategies.ucs",
+        "documentation": {}
+    },
+    {
+        "label": "user_input",
+        "kind": 2,
+        "importPath": "src.moving_strategies.user_input",
+        "description": "src.moving_strategies.user_input",
+        "peekOfCode": "def user_input(position: tuple[int, int], maze: Map) -> tuple[int, int]:\n  moves = {\n      \"w\": (-1, 0),  # Up\n      \"s\": (1, 0),   # Down\n      \"a\": (0, -1),  # Left\n      \"d\": (0, 1)    # Right\n  }\n  print(\"Enter move (w: up, s: down, a: left, d: right): \", end=\"\")\n  user_move = input().strip().lower()\n  if user_move not in moves:",
+        "detail": "src.moving_strategies.user_input",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "src.utils.add_tuple",
+        "description": "src.utils.add_tuple",
+        "peekOfCode": "def add(a: tuple[int, int], b: tuple[int, int]) -> tuple[int, int]:\n    return (a[0] + b[0], a[1] + b[1])",
+        "detail": "src.utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "CELL_TYPES",
+        "kind": 5,
+        "importPath": "src.utils.enums",
+        "description": "src.utils.enums",
+        "peekOfCode": "CELL_TYPES = {\n  'EMPTY': '.',\n  'WALL': '#',\n  'PACMAN': 'V',\n  'GHOST': 'G',\n  'FOOD': 'o',\n}\nDIRECTIONS = {\n  'U': (-1, 0),\n  'D': (1, 0),",
+        "detail": "src.utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DIRECTIONS",
+        "kind": 5,
+        "importPath": "src.utils.enums",
+        "description": "src.utils.enums",
+        "peekOfCode": "DIRECTIONS = {\n  'U': (-1, 0),\n  'D': (1, 0),\n  'L': (0, -1),\n  'R': (0, 1),\n}",
+        "detail": "src.utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "on_update",
+        "kind": 2,
+        "importPath": "src.utils.game_logic",
+        "description": "src.utils.game_logic",
+        "peekOfCode": "def on_update(map: Map, pacman: Pacman, ghosts: list[Pacman]):\n  new_pacman_position = pacman.moving_strategy(pacman.position, map)\n  ghosts_next_positions = []\n  for ghost in ghosts:\n    moves = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)\n    if pacman.position not in moves:\n      moves = random.move_randomly(ghost.position, pacman.position, map, ghosts_next_positions)\n    next_position = _get_next_position(moves, ghost.position, pacman.position)\n    ghost.position = next_position\n    ghosts_next_positions.append(next_position)",
+        "detail": "src.utils.game_logic",
+        "documentation": {}
+    },
+    {
+        "label": "load",
+        "kind": 2,
+        "importPath": "src.utils.load_map",
+        "description": "src.utils.load_map",
+        "peekOfCode": "def load(file_path: str) -> tuple[list[str], tuple[int, int], list[tuple[int, int]]]:\n  with open(file_path, 'r') as file:\n    lines = file.readlines()\n    map_data = [line.strip() for line in lines]\n    map_data = [line.replace('\\n', '') for line in map_data]\n    map_data = [line.replace('\\r', '') for line in map_data]\n    pacman =  None\n    ghosts = []\n    for i, line in enumerate(map_data):\n      for j, cell in enumerate(line):",
+        "detail": "src.utils.load_map",
+        "documentation": {}
+    },
+    {
+        "label": "to_string",
+        "kind": 2,
+        "importPath": "src.utils.renderer",
+        "description": "src.utils.renderer",
+        "peekOfCode": "def to_string(map, pacman, ghosts):\n  res = \"\"\n  ghosts_positions = [ghost.position for ghost in ghosts]\n  for i in range(map.N):\n    for j in range(map.M):\n      if (i, j) == pacman.position:\n        res += 'V'\n      elif (i, j) in ghosts_positions:\n        res += 'G'\n      else:",
+        "detail": "src.utils.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "console_render",
+        "kind": 2,
+        "importPath": "src.utils.renderer",
+        "description": "src.utils.renderer",
+        "peekOfCode": "def console_render(map: Map, pacman: Pacman, ghosts: list[Ghost]):\n  # clear screen\n  # os.system('cls' if os.name == 'nt' else 'clear')\n  print(\"Score:\", pacman.score)\n  print(\"Lives:\", pacman.lives)\n  map_string = to_string(map, pacman, ghosts)\n  print(map_string)\ndef on_render(map: Map, pacman: Pacman, ghosts: list[Ghost]):\n  console_render(map, pacman, ghosts)",
+        "detail": "src.utils.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "on_render",
+        "kind": 2,
+        "importPath": "src.utils.renderer",
+        "description": "src.utils.renderer",
+        "peekOfCode": "def on_render(map: Map, pacman: Pacman, ghosts: list[Ghost]):\n  console_render(map, pacman, ghosts)",
+        "detail": "src.utils.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "initialize",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def initialize():\n  map_data, pacman_position, ghosts_positions = utils.load_map.load('assets/maps/map1.txt')  \n  map = Map(map_data)\n  pacman = Pacman(pacman_position, user_input)\n  idx = 0\n  moving_strategies = [bfs, dfs, ucs, a_star]\n  ghosts = []\n  for ghost_position in ghosts_positions:\n    ghosts.append(Ghost(ghost_position, moving_strategies[idx], f'Ghost {idx}'))\n    idx = (idx + 1) % 4",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def main():\n  map, pacman, ghosts = initialize()\n  is_running = True\n  utils.renderer.on_render(map, pacman, ghosts)\n  while is_running:\n    utils.game_logic.on_update(map, pacman, ghosts)\n    utils.renderer.on_render(map, pacman, ghosts)\n    if pacman.lives <= 0:\n      is_running = False\nif __name__ == '__main__':",
+        "detail": "src.main",
+        "documentation": {}
+    }
+]
