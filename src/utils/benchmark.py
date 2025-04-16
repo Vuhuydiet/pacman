@@ -20,7 +20,7 @@ def strategy_benchmark(func):
 
     print(f"\nBenchmark for `{func.__name__}`:")
     print(f"⏱️ Execution time: {end_time - start_time:.6f} seconds")
-    print(f"📦 Memory used during execution: {total_memory_used / 10**9:.3f} KB")
+    print(f"📦 Memory used during execution: {total_memory_used / 10**3:.3f} KB")
     print(f"?? Number of expanded nodes: {n_expanded_nodes}\n")
     
     return move
