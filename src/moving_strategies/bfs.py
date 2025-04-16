@@ -3,7 +3,7 @@ import queue
 from utils.enums import DIRECTIONS
 from utils.add_tuple import add
 
-def bfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:
+def bfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[int, int]:
   q = queue.Queue()
   prev = {}
   
@@ -21,6 +21,12 @@ def bfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]
       q.put(new_cell)
       if new_cell == pacman_pos:
         break
+      
+  cur_pos = pacman_pos
+  prev_pos = prev[cur_pos]
+  while prev_pos != position:
+    cur_pos = prev_pos
+    prev_pos = prev[cur_pos]
   
-  return prev
+  return cur_pos
     

@@ -318,7 +318,7 @@
         "kind": 2,
         "importPath": "src.moving_strategies.a_star",
         "description": "src.moving_strategies.a_star",
-        "peekOfCode": "def a_star(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  return prev",
+        "peekOfCode": "def a_star(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[int, int]:\n  return position",
         "detail": "src.moving_strategies.a_star",
         "documentation": {}
     },
@@ -327,7 +327,7 @@
         "kind": 2,
         "importPath": "src.moving_strategies.bfs",
         "description": "src.moving_strategies.bfs",
-        "peekOfCode": "def bfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  q = queue.Queue()\n  prev = {}\n  q.put(position)\n  prev[position] = position\n  while not q.empty():\n    current = q.get()\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or new_cell in prev or maze.is_wall(new_cell):",
+        "peekOfCode": "def bfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[int, int]:\n  q = queue.Queue()\n  prev = {}\n  q.put(position)\n  prev[position] = position\n  while not q.empty():\n    current = q.get()\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or new_cell in prev or maze.is_wall(new_cell):",
         "detail": "src.moving_strategies.bfs",
         "documentation": {}
     },
@@ -336,7 +336,7 @@
         "kind": 2,
         "importPath": "src.moving_strategies.dfs",
         "description": "src.moving_strategies.dfs",
-        "peekOfCode": "def dfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  def dfs_imp(current: tuple[int, int]) -> tuple[int, int]:\n    if current in restricted_cells:\n      return None\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or new_cell in prev or maze.is_wall(new_cell):\n        continue",
+        "peekOfCode": "def dfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[int, int]:\n  visited = set()  \n  visited.add(position)\n  def dfs_imp(current: tuple[int, int]) -> tuple[int, int]:\n    if current in restricted_cells:\n      return None\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or new_cell in visited or maze.is_wall(new_cell):\n        continue",
         "detail": "src.moving_strategies.dfs",
         "documentation": {}
     },
@@ -345,7 +345,7 @@
         "kind": 2,
         "importPath": "src.moving_strategies.random",
         "description": "src.moving_strategies.random",
-        "peekOfCode": "def move_randomly(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  for d in DIRECTIONS.values():\n    new_cell = add(position, d)\n    if not maze.contains_cell(new_cell) or new_cell in prev or maze.is_wall(new_cell):\n      continue\n    if new_cell in restricted_cells:\n      continue\n    prev[new_cell] = position",
+        "peekOfCode": "def move_randomly(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  for d in DIRECTIONS.values():\n    new_cell = add(position, d)\n    if not maze.contains_cell(new_cell) or maze.is_wall(new_cell):\n      continue\n    if new_cell in restricted_cells:\n      continue\n    return new_cell\n  return position",
         "detail": "src.moving_strategies.random",
         "documentation": {}
     },
@@ -354,7 +354,7 @@
         "kind": 2,
         "importPath": "src.moving_strategies.ucs",
         "description": "src.moving_strategies.ucs",
-        "peekOfCode": "def ucs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> dict[tuple[int, int], tuple[int, int]]:\n  prev = {}\n  prev[position] = position\n  return prev",
+        "peekOfCode": "def ucs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[int, int]:\n  return position",
         "detail": "src.moving_strategies.ucs",
         "documentation": {}
     },
@@ -399,7 +399,7 @@
         "kind": 2,
         "importPath": "src.utils.game_logic",
         "description": "src.utils.game_logic",
-        "peekOfCode": "def on_update(map: Map, pacman: Pacman, ghosts: list[Pacman]):\n  new_pacman_position = pacman.moving_strategy(pacman.position, map)\n  ghosts_next_positions = []\n  for ghost in ghosts:\n    moves = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)\n    if pacman.position not in moves:\n      moves = random.move_randomly(ghost.position, pacman.position, map, ghosts_next_positions)\n    next_position = _get_next_position(moves, ghost.position, pacman.position)\n    ghost.position = next_position\n    ghosts_next_positions.append(next_position)",
+        "peekOfCode": "def on_update(map: Map, pacman: Pacman, ghosts: list[Pacman]):\n  new_pacman_position = pacman.moving_strategy(pacman.position, map)\n  ghosts_next_positions = []\n  for ghost in ghosts:\n    next_position = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)\n    ghost.position = next_position\n    ghosts_next_positions.append(next_position)\n  if map.is_food(new_pacman_position):\n    map.collect_gold(new_pacman_position)\n    pacman.score += 1",
         "detail": "src.utils.game_logic",
         "documentation": {}
     },
