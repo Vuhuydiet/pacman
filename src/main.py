@@ -1,3 +1,5 @@
+import json
+
 import utils
 import utils.game_logic
 import utils.load_map
@@ -8,7 +10,7 @@ from models.MovingObject import Ghost, Pacman
 
 from moving_strategies.user_input import user_input
 from moving_strategies.bfs import bfs 
-from moving_strategies.dfs import dfs
+from moving_strategies.iddfs import iddfs
 from moving_strategies.ucs import ucs
 from moving_strategies.a_star import a_star
 
@@ -21,7 +23,7 @@ def initialize():
   pacman = Pacman(pacman_position, user_input)
   
   idx = 0
-  moving_strategies = [bfs, dfs, ucs, a_star]
+  moving_strategies = [bfs, iddfs, ucs, a_star]
   ghosts = []
   for ghost_position in ghosts_positions:
     ghosts.append(Ghost(ghost_position, moving_strategies[idx], f'Ghost {idx}'))
@@ -40,8 +42,7 @@ def main():
     
     if pacman.lives <= 0:
       is_running = False
-
-
+      
 if __name__ == '__main__':
   main()    
     

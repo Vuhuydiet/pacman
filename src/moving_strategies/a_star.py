@@ -1,5 +1,7 @@
+from utils.benchmark import strategy_benchmark
 from models.Map import Map
 
-def a_star(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[int, int]:
+@strategy_benchmark
+def a_star(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[tuple[int, int], int]:
   
-  return position
+  return position, 0

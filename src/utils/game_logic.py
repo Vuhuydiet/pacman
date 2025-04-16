@@ -1,11 +1,10 @@
 from models.Map import Map
 from models.MovingObject import Pacman
-from moving_strategies import random
 
 def on_update(map: Map, pacman: Pacman, ghosts: list[Pacman]):
   new_pacman_position = pacman.moving_strategy(pacman.position, map)
   
-  ghosts_next_positions = []
+  ghosts_next_positions = [ghost.position for ghost in ghosts]
   for ghost in ghosts:
     next_position = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)
     

@@ -1,5 +1,3 @@
-import os
-
 from models.Map import Map
 from models.MovingObject import Pacman, Ghost
 
@@ -23,9 +21,13 @@ def console_render(map: Map, pacman: Pacman, ghosts: list[Ghost]):
 
   print("Score:", pacman.score)
   print("Lives:", pacman.lives)
+  print(to_string(map, pacman, ghosts))
   
-  map_string = to_string(map, pacman, ghosts)
-  print(map_string)
+  if (pacman.lives <= 0):
+    print("-----------------------------------------------------------")
+    print("------------------------- Game Over -----------------------")
+    print("-----------------------------------------------------------")
+
 
 def on_render(map: Map, pacman: Pacman, ghosts: list[Ghost]):
   console_render(map, pacman, ghosts)
