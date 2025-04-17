@@ -31,10 +31,12 @@ def a_star(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, in
         path.append(current)
         current = came_from[current]
       path.reverse()
+      if len(path) == 0:
+        return position, expanded_nodes
       return path[0], expanded_nodes
 
     for neighbor in maze.get_neighbors(current):
-      if neighbor in restricted_cells or neighbor in closed_set:
+      if (current == position and neighbor in restricted_cells) or neighbor in closed_set:
         continue
 
       tentative_g_score = g_score[current] + 1

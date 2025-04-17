@@ -1,4 +1,5 @@
-from utils.enums import CELL_TYPES
+from utils.enums import CELL_TYPES, DIRECTIONS
+from utils.add_tuple import add
 
 class Map:
   def __init__(self, map: list[str]):
@@ -46,3 +47,14 @@ class Map:
     if not self.contains_cell((x, y)):
       raise ValueError("Coordinates out of bounds")
     return self.__map[x][y]
+  
+  def get_neighbors(self, cell: tuple[int, int]) -> list[tuple[int, int]]:
+    x, y = cell
+    
+    neighbors = []
+    for d in DIRECTIONS.values():
+      new_cell = add(cell, d)
+      if self.contains_cell(new_cell) and not self.is_wall(new_cell):
+        neighbors.append(new_cell)  
+    
+    return neighbors
