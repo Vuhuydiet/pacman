@@ -7,24 +7,31 @@ def strategy_benchmark(func):
   def wrapper(*args, **kwargs):
     tracemalloc.start()
     start_time = time.perf_counter()
-    start_snapshot = tracemalloc.take_snapshot()
+    
+    result = func(*args, **kwargs)
+    
+    # Handle different return formats
+    if isinstance(result, tuple) and len(result) == 2:
+        move, n_expanded_nodes = result
+    else:
+        move = result
+        n_expanded_nodes = 1  # Default value if not provided
 
-    move, n_expanded_nodes = func(*args, **kwargs)
-
-    end_snapshot = tracemalloc.take_snapshot()
     end_time = time.perf_counter()
+    current, peak = tracemalloc.get_traced_memory()
     tracemalloc.stop()
 
-    stats = end_snapshot.compare_to(start_snapshot, 'lineno')
-    total_memory_used = sum(stat.size_diff for stat in stats)
-
-    print(f"\nBenchmark for `{func.__name__}`:")
-    print(f"⏱️ Execution time: {end_time - start_time:.6f} seconds")
-    print(f"📦 Memory used during execution: {total_memory_used / 10**3:.3f} KB")
-    print(f"?? Number of expanded nodes: {n_expanded_nodes}\n")
+    # For pygame implementation, we'll return metrics rather than printing
+    execution_time = end_time - start_time
+    memory_used = peak / 10**3  # KB
     
-    return move
+    # Print stats in console mode for debugging
+    print(f"\nBenchmark for `{func.__name__}`:")
+    print(f"⏱️ Execution time: {execution_time:.6f} seconds")
+    print(f"📦 Memory used during execution: {memory_used:.3f} KB")
+    print(f"🔍 Number of expanded nodes: {n_expanded_nodes}\n")
+    
+    return move, n_expanded_nodes
   return wrapper
 
-    
-        
+
