@@ -29,7 +29,7 @@ def iddfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int
       result = dfs(new_cell, visited, depth + 1, limit)
       if result is not None:
         return new_cell
-      visited.remove(new_cell)
+      # visited.remove(new_cell)
     return None
 
   for depth in range(1, maze.N * maze.M):
