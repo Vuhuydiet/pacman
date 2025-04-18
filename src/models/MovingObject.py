@@ -28,7 +28,7 @@ class Pacman(MovingObject):
     self.frame = 0
     self.time = pygame.time.get_ticks()
     self.collapse = 30
-    self.direction = MOVEMENT_DIRECTIONS['UP']
+    self.direction = MOVEMENT_DIRECTIONS['RIGHT']
 
   def get_direction(self, new_position):
     delta = subtract_tuple(new_position, self.position)
@@ -45,7 +45,6 @@ class Pacman(MovingObject):
   def update(self, new_position):
     current_time = pygame.time.get_ticks()
     
-    # If we have a new target position different from current target
     if new_position != self.target_position:
       self.target_position = new_position
       self.direction = self.get_direction(new_position)
@@ -93,7 +92,7 @@ class Ghost(MovingObject):
     super().__init__(initial_position, moving_strategy)
     self.name = name
     self.animations = get_ghost_quads(quads)[name]
-    self.direction = MOVEMENT_DIRECTIONS['UP']
+    self.direction = MOVEMENT_DIRECTIONS['RIGHT']
 
   def get_direction(self, new_position):
     delta = subtract_tuple(new_position, self.position)

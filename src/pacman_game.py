@@ -15,7 +15,7 @@ from moving_strategies.pygame_user_input import pygame_user_input
 from utils.enums import *
 
 def initialize_level(level):
-    map_data, pacman_position, ghosts_positions = load('assets/maps/map2.txt')  
+    map_data, pacman_position, ghosts_positions = load('assets/maps/map3.txt')  
     maze_map = Map(map_data)
     
     ghosts = []
