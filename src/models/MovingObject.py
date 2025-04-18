@@ -15,7 +15,7 @@ class MovingObject:
     self.visual_x = initial_position[1] * CELL_SIZE
     self.visual_y = initial_position[0] * CELL_SIZE
     self.target_position = initial_position
-    self.speed = 4
+    self.speed = 5
     self.is_moving = False
     
     
@@ -93,6 +93,7 @@ class Ghost(MovingObject):
     self.name = name
     self.animations = get_ghost_quads(quads)[name]
     self.direction = MOVEMENT_DIRECTIONS['RIGHT']
+    self.speed = 2
 
   def get_direction(self, new_position):
     delta = subtract_tuple(new_position, self.position)

@@ -81,7 +81,6 @@ class PygameRenderer:
 
         pacman.draw(self.screen)
 
-        ghost_colors = [BLUE, PINK, ORANGE, RED]
         for idx, ghost in enumerate(ghosts):
             ghost.draw(self.screen)
 
