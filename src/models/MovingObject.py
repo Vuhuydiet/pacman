@@ -42,18 +42,26 @@ class Pacman(MovingObject):
       return MOVEMENT_DIRECTIONS['UP']
     return self.direction
 
+  def set_position(self, new_position):
+    self.target_position = self.position = new_position
+    self.visual_x = new_position[1] * CELL_SIZE
+    self.visual_y = new_position[0] * CELL_SIZE
+    self.is_moving = False
+    self.frame = 0
+
+
   def update(self, new_position):
     current_time = pygame.time.get_ticks()
-    
-    if new_position != self.target_position:
-      self.target_position = new_position
-      self.direction = self.get_direction(new_position)
-      self.is_moving = True
     
     if current_time - self.time >= self.collapse:
       self.frame = (self.frame + 1) % len(self.animations[self.direction])
       self.time = current_time
     
+    if new_position != self.target_position:
+      self.target_position = new_position
+      self.direction = self.get_direction(new_position)
+    
+    self.is_moving = self.target_position != self.position
     if self.is_moving:
       target_x = self.target_position[1] * CELL_SIZE
       target_y = self.target_position[0] * CELL_SIZE
@@ -68,14 +76,14 @@ class Pacman(MovingObject):
         self.is_moving = False
       else:
         if dx > 0:
-          self.visual_x += min(self.speed, dx)
+          self.visual_x += self.speed
         elif dx < 0:
-          self.visual_x -= min(self.speed, abs(dx))
+          self.visual_x -= self.speed
           
         if dy > 0:
-          self.visual_y += min(self.speed, dy)
+          self.visual_y += self.speed
         elif dy < 0:
-          self.visual_y -= min(self.speed, abs(dy))
+          self.visual_y -= self.speed
 
   def draw(self, screen):
     if self.lives > 0:

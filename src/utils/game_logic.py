@@ -1,10 +1,10 @@
 from models.Map import Map
 from models.MovingObject import Pacman, Ghost
+import random
+from utils.enums import CELL_TYPES
 
 def on_update(map: Map, pacman: Pacman, ghosts: list[Ghost]):
-  new_pacman_position = pacman.moving_strategy(pacman.position, map)
-  
-  ghosts_next_positions = []
+  ghosts_next_positions = [ghost.position for ghost in ghosts]
   total_expanded_nodes = 0
   
   for ghost in ghosts:
@@ -12,17 +12,23 @@ def on_update(map: Map, pacman: Pacman, ghosts: list[Ghost]):
     
     ghost.update(next_position)
     ghosts_next_positions.append(next_position)
+    
     if expanded_nodes is not None:
       total_expanded_nodes += expanded_nodes
     
+  new_pacman_position = pacman.moving_strategy(pacman.position, map)
   if map.is_food(new_pacman_position):
     map.collect_gold(new_pacman_position)
     pacman.score += 1
 
   if new_pacman_position in ghosts_next_positions:
     pacman.lives -= 1
-  
-  pacman.update(new_pacman_position)
+    empty_cells = [cell for cell in map.get_cells_of_type(CELL_TYPES['EMPTY']) if cell not in ghosts_next_positions]
+    new_pacman_position = random.choice(empty_cells) if empty_cells else pacman.position
+    pacman.set_position(new_pacman_position)
+    print(new_pacman_position)
+  else: 
+    pacman.update(new_pacman_position)
   
   return total_expanded_nodes
 

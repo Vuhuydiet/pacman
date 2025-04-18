@@ -8,6 +8,14 @@
         "documentation": {}
     },
     {
+        "label": "DIRECTIONS",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
         "label": "MOVEMENT_DIRECTIONS",
         "importPath": "utils.enums",
         "description": "utils.enums",
@@ -64,6 +72,22 @@
         "documentation": {}
     },
     {
+        "label": "CELL_TYPES",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "utils.enums",
         "description": "utils.enums",
@@ -85,6 +109,54 @@
         "description": "utils.enums",
         "isExtraImport": true,
         "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "utils.add_tuple",
+        "description": "utils.add_tuple",
+        "isExtraImport": true,
+        "detail": "utils.add_tuple",
         "documentation": {}
     },
     {
@@ -273,52 +345,28 @@
         "documentation": {}
     },
     {
+        "label": "heappop",
+        "importPath": "heapq",
+        "description": "heapq",
+        "isExtraImport": true,
+        "detail": "heapq",
+        "documentation": {}
+    },
+    {
+        "label": "heappush",
+        "importPath": "heapq",
+        "description": "heapq",
+        "isExtraImport": true,
+        "detail": "heapq",
+        "documentation": {}
+    },
+    {
         "label": "queue",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "queue",
         "description": "queue",
         "detail": "queue",
-        "documentation": {}
-    },
-    {
-        "label": "add",
-        "importPath": "utils.add_tuple",
-        "description": "utils.add_tuple",
-        "isExtraImport": true,
-        "detail": "utils.add_tuple",
-        "documentation": {}
-    },
-    {
-        "label": "add",
-        "importPath": "utils.add_tuple",
-        "description": "utils.add_tuple",
-        "isExtraImport": true,
-        "detail": "utils.add_tuple",
-        "documentation": {}
-    },
-    {
-        "label": "add",
-        "importPath": "utils.add_tuple",
-        "description": "utils.add_tuple",
-        "isExtraImport": true,
-        "detail": "utils.add_tuple",
-        "documentation": {}
-    },
-    {
-        "label": "add",
-        "importPath": "utils.add_tuple",
-        "description": "utils.add_tuple",
-        "isExtraImport": true,
-        "detail": "utils.add_tuple",
-        "documentation": {}
-    },
-    {
-        "label": "add",
-        "importPath": "utils.add_tuple",
-        "description": "utils.add_tuple",
-        "isExtraImport": true,
-        "detail": "utils.add_tuple",
         "documentation": {}
     },
     {
@@ -446,38 +494,26 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
+        "label": "PygameRenderer",
+        "importPath": "utils.pygame_renderer",
+        "description": "utils.pygame_renderer",
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "detail": "utils.pygame_renderer",
         "documentation": {}
     },
     {
-        "label": "utils",
-        "kind": 6,
+        "label": "PygameRenderer",
+        "importPath": "utils.pygame_renderer",
+        "description": "utils.pygame_renderer",
         "isExtraImport": true,
-        "importPath": "utils",
-        "description": "utils",
-        "detail": "utils",
+        "detail": "utils.pygame_renderer",
         "documentation": {}
     },
     {
-        "label": "utils.game_logic",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "utils.game_logic",
-        "description": "utils.game_logic",
-        "detail": "utils.game_logic",
-        "documentation": {}
-    },
-    {
-        "label": "utils.load_map",
-        "kind": 6,
-        "isExtraImport": true,
+        "label": "load",
         "importPath": "utils.load_map",
         "description": "utils.load_map",
+        "isExtraImport": true,
         "detail": "utils.load_map",
         "documentation": {}
     },
@@ -490,20 +526,12 @@
         "documentation": {}
     },
     {
-        "label": "utils.renderer",
+        "label": "utils.game_logic",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "utils.renderer",
-        "description": "utils.renderer",
-        "detail": "utils.renderer",
-        "documentation": {}
-    },
-    {
-        "label": "user_input",
-        "importPath": "moving_strategies.user_input",
-        "description": "moving_strategies.user_input",
-        "isExtraImport": true,
-        "detail": "moving_strategies.user_input",
+        "importPath": "utils.game_logic",
+        "description": "utils.game_logic",
+        "detail": "utils.game_logic",
         "documentation": {}
     },
     {
@@ -571,11 +599,11 @@
         "documentation": {}
     },
     {
-        "label": "PygameRenderer",
-        "importPath": "utils.pygame_renderer",
-        "description": "utils.pygame_renderer",
+        "label": "pygame_user_input",
+        "importPath": "moving_strategies.pygame_user_input",
+        "description": "moving_strategies.pygame_user_input",
         "isExtraImport": true,
-        "detail": "utils.pygame_renderer",
+        "detail": "moving_strategies.pygame_user_input",
         "documentation": {}
     },
     {
@@ -600,7 +628,7 @@
         "kind": 6,
         "importPath": "src.models.MovingObject",
         "description": "src.models.MovingObject",
-        "peekOfCode": "class MovingObject:\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    self.position = initial_position\n    self.moving_strategy = moving_strategy\nclass Pacman(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    super().__init__(initial_position, moving_strategy)\n    self.lives = 3\n    self.score = 0\n    self.animations = get_pacman_quads(quads)",
+        "peekOfCode": "class MovingObject:\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    self.position = initial_position\n    self.moving_strategy = moving_strategy\n    self.visual_x = initial_position[1] * CELL_SIZE\n    self.visual_y = initial_position[0] * CELL_SIZE\n    self.target_position = initial_position\n    self.speed = 5\n    self.is_moving = False\nclass Pacman(MovingObject):",
         "detail": "src.models.MovingObject",
         "documentation": {}
     },
@@ -609,7 +637,7 @@
         "kind": 6,
         "importPath": "src.models.MovingObject",
         "description": "src.models.MovingObject",
-        "peekOfCode": "class Pacman(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    super().__init__(initial_position, moving_strategy)\n    self.lives = 3\n    self.score = 0\n    self.animations = get_pacman_quads(quads)\n    self.frame = 0\n    self.time = pygame.time.get_ticks()\n    self.collapse = 20\n    self.direction = MOVEMENT_DIRECTIONS['UP']",
+        "peekOfCode": "class Pacman(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    super().__init__(initial_position, moving_strategy)\n    self.lives = 3\n    self.score = 0\n    self.animations = get_pacman_quads(quads)\n    self.frame = 0\n    self.time = pygame.time.get_ticks()\n    self.collapse = 30\n    self.direction = MOVEMENT_DIRECTIONS['RIGHT']",
         "detail": "src.models.MovingObject",
         "documentation": {}
     },
@@ -618,7 +646,7 @@
         "kind": 6,
         "importPath": "src.models.MovingObject",
         "description": "src.models.MovingObject",
-        "peekOfCode": "class Ghost(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy, name):\n    super().__init__(initial_position, moving_strategy)\n    self.name = name\n    self.animations = get_ghost_quads(quads)[name]\n    self.direction = MOVEMENT_DIRECTIONS['UP']\n  def get_direction(self, new_position):\n    delta = subtract_tuple(new_position, self.position)\n    if delta[1] > 0:\n      return MOVEMENT_DIRECTIONS['RIGHT']",
+        "peekOfCode": "class Ghost(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy, name):\n    super().__init__(initial_position, moving_strategy)\n    self.name = name\n    self.animations = get_ghost_quads(quads)[name]\n    self.direction = MOVEMENT_DIRECTIONS['RIGHT']\n    self.speed = 2\n  def get_direction(self, new_position):\n    delta = subtract_tuple(new_position, self.position)\n    if delta[1] > 0:",
         "detail": "src.models.MovingObject",
         "documentation": {}
     },
@@ -627,7 +655,7 @@
         "kind": 5,
         "importPath": "src.models.MovingObject",
         "description": "src.models.MovingObject",
-        "peekOfCode": "sprite_sheet = pygame.image.load('assets/sprites/sprite_sheet.png')\nquads = get_quads(sprite_sheet)\nclass MovingObject:\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    self.position = initial_position\n    self.moving_strategy = moving_strategy\nclass Pacman(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    super().__init__(initial_position, moving_strategy)\n    self.lives = 3",
+        "peekOfCode": "sprite_sheet = pygame.image.load('assets/sprites/sprite_sheet.png')\nquads = get_quads(sprite_sheet)\nclass MovingObject:\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    self.position = initial_position\n    self.moving_strategy = moving_strategy\n    self.visual_x = initial_position[1] * CELL_SIZE\n    self.visual_y = initial_position[0] * CELL_SIZE\n    self.target_position = initial_position\n    self.speed = 5",
         "detail": "src.models.MovingObject",
         "documentation": {}
     },
@@ -636,7 +664,7 @@
         "kind": 5,
         "importPath": "src.models.MovingObject",
         "description": "src.models.MovingObject",
-        "peekOfCode": "quads = get_quads(sprite_sheet)\nclass MovingObject:\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    self.position = initial_position\n    self.moving_strategy = moving_strategy\nclass Pacman(MovingObject):\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    super().__init__(initial_position, moving_strategy)\n    self.lives = 3\n    self.score = 0",
+        "peekOfCode": "quads = get_quads(sprite_sheet)\nclass MovingObject:\n  def __init__(self, initial_position: tuple[int, int], moving_strategy):\n    self.position = initial_position\n    self.moving_strategy = moving_strategy\n    self.visual_x = initial_position[1] * CELL_SIZE\n    self.visual_y = initial_position[0] * CELL_SIZE\n    self.target_position = initial_position\n    self.speed = 5\n    self.is_moving = False",
         "detail": "src.models.MovingObject",
         "documentation": {}
     },
@@ -663,7 +691,7 @@
         "kind": 2,
         "importPath": "src.moving_strategies.iddfs",
         "description": "src.moving_strategies.iddfs",
-        "peekOfCode": "def iddfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[tuple[int, int], int]:\n  n_expanded_nodes = 0\n  def dfs(current, visited, depth, limit) -> tuple[int, int]:\n    if depth > limit:\n      return None\n    nonlocal n_expanded_nodes\n    n_expanded_nodes += 1\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or new_cell in visited or maze.is_wall(new_cell):",
+        "peekOfCode": "def iddfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[tuple[int, int], int]:\n  n_expanded_nodes = 0\n  def dfs(current, met_at, depth, limit) -> tuple[int, int]:\n    if depth > limit:\n      return None\n    nonlocal n_expanded_nodes\n    n_expanded_nodes += 1\n    for d in DIRECTIONS.values():\n      new_cell = add(current, d)\n      if not maze.contains_cell(new_cell) or met_at.get(new_cell, 1e9) <= depth + 1 or maze.is_wall(new_cell):",
         "detail": "src.moving_strategies.iddfs",
         "documentation": {}
     },
@@ -690,7 +718,7 @@
         "kind": 2,
         "importPath": "src.moving_strategies.ucs",
         "description": "src.moving_strategies.ucs",
-        "peekOfCode": "def ucs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[tuple[int, int], int]:\n  return position, 0",
+        "peekOfCode": "def ucs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]) -> tuple[tuple[int, int], int]:\n  open_set = []\n  heappush(open_set, (0, position))\n  came_from = {}\n  g_score = {position: 0}\n  expanded_nodes = 0\n  closed_set = set()\n  while open_set:\n    cost, current = heappop(open_set)\n    if current in closed_set:",
         "detail": "src.moving_strategies.ucs",
         "documentation": {}
     },
@@ -942,7 +970,7 @@
         "kind": 2,
         "importPath": "src.utils.game_logic",
         "description": "src.utils.game_logic",
-        "peekOfCode": "def on_update(map: Map, pacman: Pacman, ghosts: list[Ghost]):\n  new_pacman_position = pacman.moving_strategy(pacman.position, map)\n  ghosts_next_positions = []\n  total_expanded_nodes = 0\n  for ghost in ghosts:\n    next_position, expanded_nodes = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)\n    ghost.update(next_position)\n    ghosts_next_positions.append(next_position)\n    if expanded_nodes is not None:\n      total_expanded_nodes += expanded_nodes",
+        "peekOfCode": "def on_update(map: Map, pacman: Pacman, ghosts: list[Ghost]):\n  ghosts_next_positions = [ghost.position for ghost in ghosts]\n  total_expanded_nodes = 0\n  for ghost in ghosts:\n    next_position, expanded_nodes = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)\n    ghost.update(next_position)\n    ghosts_next_positions.append(next_position)\n    if expanded_nodes is not None:\n      total_expanded_nodes += expanded_nodes\n  new_pacman_position = pacman.moving_strategy(pacman.position, map)",
         "detail": "src.utils.game_logic",
         "documentation": {}
     },
@@ -1059,16 +1087,25 @@
         "kind": 2,
         "importPath": "src.utils.subtract_tuple",
         "description": "src.utils.subtract_tuple",
-        "peekOfCode": "def subtract_tuple(a: tuple[int, int], b: tuple[int, int]) -> tuple[int, int]:\n    return a[0] - b[0], a[1] - b[1]",
+        "peekOfCode": "def subtract_tuple(tuple1, tuple2):\n    return (tuple1[0] - tuple2[0], tuple1[1] - tuple2[1])",
         "detail": "src.utils.subtract_tuple",
         "documentation": {}
     },
     {
-        "label": "initialize",
+        "label": "initialize_level",
         "kind": 2,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "def initialize():\n  map_data, pacman_position, ghosts_positions = utils.load_map.load('assets/maps/map1.txt')  \n  map = Map(map_data)\n  pacman = Pacman(pacman_position, user_input)\n  idx = 0\n  moving_strategies = [bfs, iddfs, ucs, a_star]\n  ghosts = []\n  for ghost_position in ghosts_positions:\n    ghosts.append(Ghost(ghost_position, moving_strategies[idx], f'Ghost {idx}'))\n    idx = (idx + 1) % 4",
+        "peekOfCode": "def initialize_level(level):\n    map_data, pacman_position, ghosts_positions = load('assets/maps/map3.txt')  \n    maze_map = Map(map_data)\n    ghosts = []\n    if level == 1:\n        pacman = Pacman(pacman_position, lambda pos, map: pos)\n        ghosts.append(Ghost(ghosts_positions[0], bfs, GHOST_NAMES['BLUE']))\n    elif level == 2:\n        pacman = Pacman(pacman_position, lambda pos, map: pos)\n        ghosts.append(Ghost(ghosts_positions[0], iddfs, GHOST_NAMES['PINK']))",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "run_game",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def run_game(level):\n    renderer = PygameRenderer()\n    maze_map, pacman, ghosts = initialize_level(level)\n    renderer.set_fps(60)\n    is_running = True\n    metrics = {\"search_time\": 0.0, \"expanded_nodes\": 0, \"memory_usage\": \"0 KB\"}\n    pacman_started_moving = level != 6\n    initial_position = pacman.position\n    while is_running:\n        keys = renderer.handle_events()",
         "detail": "src.main",
         "documentation": {}
     },
@@ -1077,7 +1114,7 @@
         "kind": 2,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "def main():\n  map, pacman, ghosts = initialize()\n  is_running = True\n  utils.renderer.on_render(map, pacman, ghosts)\n  while is_running:\n    utils.game_logic.on_update(map, pacman, ghosts)\n    utils.renderer.on_render(map, pacman, ghosts)\n    if pacman.lives <= 0:\n      is_running = False\nif __name__ == '__main__':",
+        "peekOfCode": "def main():\n    renderer = PygameRenderer()\n    while True:\n        level = renderer.get_menu_input()\n        run_game(level)\nif __name__ == \"__main__\":\n    main()",
         "detail": "src.main",
         "documentation": {}
     },
@@ -1086,7 +1123,7 @@
         "kind": 2,
         "importPath": "src.pacman_game",
         "description": "src.pacman_game",
-        "peekOfCode": "def initialize_level(level):\n    map_data, pacman_position, ghosts_positions = load('assets/maps/map2.txt')  \n    maze_map = Map(map_data)\n    ghosts = []\n    if level == 1:\n        pacman = Pacman(pacman_position, lambda pos, map: pos)\n        ghosts.append(Ghost(ghosts_positions[0], bfs, GHOST_NAMES['BLUE']))\n    elif level == 2:\n        pacman = Pacman(pacman_position, lambda pos, map: pos)\n        ghosts.append(Ghost(ghosts_positions[0], iddfs, GHOST_NAMES['PINK']))",
+        "peekOfCode": "def initialize_level(level):\n    map_data, pacman_position, ghosts_positions = load('assets/maps/map3.txt')  \n    maze_map = Map(map_data)\n    ghosts = []\n    if level == 1:\n        pacman = Pacman(pacman_position, lambda pos, map: pos)\n        ghosts.append(Ghost(ghosts_positions[0], bfs, GHOST_NAMES['BLUE']))\n    elif level == 2:\n        pacman = Pacman(pacman_position, lambda pos, map: pos)\n        ghosts.append(Ghost(ghosts_positions[0], iddfs, GHOST_NAMES['PINK']))",
         "detail": "src.pacman_game",
         "documentation": {}
     },
@@ -1095,7 +1132,7 @@
         "kind": 2,
         "importPath": "src.pacman_game",
         "description": "src.pacman_game",
-        "peekOfCode": "def run_game(level):\n    renderer = PygameRenderer()\n    maze_map, pacman, ghosts = initialize_level(level)\n    if level < 6:\n        renderer.set_fps(2)\n    else:\n        renderer.set_fps(4)\n    is_running = True\n    metrics = {\"search_time\": 0.0, \"expanded_nodes\": 0, \"memory_usage\": \"0 KB\"}\n    while is_running:",
+        "peekOfCode": "def run_game(level):\n    renderer = PygameRenderer()\n    maze_map, pacman, ghosts = initialize_level(level)\n    renderer.set_fps(60)\n    is_running = True\n    metrics = {\"search_time\": 0.0, \"expanded_nodes\": 0, \"memory_usage\": \"0 KB\"}\n    pacman_started_moving = level != 6\n    initial_position = pacman.position\n    while is_running:\n        keys = renderer.handle_events()",
         "detail": "src.pacman_game",
         "documentation": {}
     },

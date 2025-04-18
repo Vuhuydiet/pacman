@@ -49,8 +49,6 @@ class Map:
     return self.__map[x][y]
   
   def get_neighbors(self, cell: tuple[int, int]) -> list[tuple[int, int]]:
-    x, y = cell
-    
     neighbors = []
     for d in DIRECTIONS.values():
       new_cell = add(cell, d)
@@ -58,3 +56,14 @@ class Map:
         neighbors.append(new_cell)  
     
     return neighbors
+  
+  def get_cells_of_type(self, cell_type: str) -> list[tuple[int, int]]:
+    if cell_type not in CELL_TYPES.values():
+      raise ValueError("Invalid cell type")
+
+    cells = []
+    for i in range(self.N):
+      for j in range(self.M):
+        if self.__map[i][j] == cell_type:
+          cells.append((i, j))
+    return cells

@@ -25,11 +25,11 @@ def strategy_benchmark(func):
     execution_time = end_time - start_time
     memory_used = peak / 10**3  # KB
     
-    # Print stats in console mode for debugging
-    print(f"\nBenchmark for `{func.__name__}`:")
-    print(f"⏱️ Execution time: {execution_time:.6f} seconds")
-    print(f"📦 Memory used during execution: {memory_used:.3f} KB")
-    print(f"🔍 Number of expanded nodes: {n_expanded_nodes}\n")
+    # # Print stats in console mode for debugging
+    # print(f"\nBenchmark for `{func.__name__}`:")
+    # print(f"⏱️ Execution time: {execution_time:.6f} seconds")
+    # print(f"📦 Memory used during execution: {memory_used:.3f} KB")
+    # print(f"🔍 Number of expanded nodes: {n_expanded_nodes}\n")
     
     return move, n_expanded_nodes
   return wrapper

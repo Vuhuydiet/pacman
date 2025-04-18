@@ -113,6 +113,18 @@ class PygameRenderer:
                 sys.exit()
                 
         return pygame.key.get_pressed()
+    
+    def get_pressed_keys(self):
+        keys = {}
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+                return
+            if event.type == pygame.KEYDOWN:
+                keys[event.key] = True
+        return keys
+                
 
     def set_fps(self, fps):
         self.fps = fps
