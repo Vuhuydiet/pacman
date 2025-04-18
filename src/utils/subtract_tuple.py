@@ -1,2 +1,2 @@
-def subtract_tuple(a: tuple[int, int], b: tuple[int, int]) -> tuple[int, int]:
-    return a[0] - b[0], a[1] - b[1]
+def subtract_tuple(tuple1, tuple2):
+    return (tuple1[0] - tuple2[0], tuple1[1] - tuple2[1])

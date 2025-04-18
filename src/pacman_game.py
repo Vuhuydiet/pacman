@@ -62,13 +62,13 @@ def run_game(level):
     renderer = PygameRenderer()
     maze_map, pacman, ghosts = initialize_level(level)
     
-    if level < 6:
-        renderer.set_fps(2)
-    else:
-        renderer.set_fps(4)
+    renderer.set_fps(60)
         
     is_running = True
     metrics = {"search_time": 0.0, "expanded_nodes": 0, "memory_usage": "0 KB"}
+    
+    pacman_started_moving = level != 6
+    initial_position = pacman.position
     
     while is_running:
         keys = renderer.handle_events()
@@ -78,8 +78,21 @@ def run_game(level):
         
         if level == 6:
             pacman.moving_strategy = lambda pos, maze_map: pygame_user_input(pos, maze_map, keys)
-        
-        expanded_nodes = game_logic.on_update(maze_map, pacman, ghosts)
+            
+            new_position = pacman.moving_strategy(pacman.position, maze_map)
+            if new_position != initial_position:
+                pacman_started_moving = True
+            
+            if pacman_started_moving:
+                expanded_nodes = game_logic.on_update(maze_map, pacman, ghosts)
+            else:
+                if maze_map.is_food(new_position):
+                    maze_map.collect_gold(new_position)
+                    pacman.score += 1
+                pacman.update(new_position)
+                expanded_nodes = 0
+        else:
+            expanded_nodes = game_logic.on_update(maze_map, pacman, ghosts)
         
         _, peak = tracemalloc.get_traced_memory()
         tracemalloc.stop()

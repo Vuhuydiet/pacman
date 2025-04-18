@@ -11,6 +11,12 @@ class MovingObject:
   def __init__(self, initial_position: tuple[int, int], moving_strategy):
     self.position = initial_position
     self.moving_strategy = moving_strategy
+
+    self.visual_x = initial_position[1] * CELL_SIZE
+    self.visual_y = initial_position[0] * CELL_SIZE
+    self.target_position = initial_position
+    self.speed = 4
+    self.is_moving = False
     
     
 class Pacman(MovingObject):
@@ -21,7 +27,7 @@ class Pacman(MovingObject):
     self.animations = get_pacman_quads(quads)
     self.frame = 0
     self.time = pygame.time.get_ticks()
-    self.collapse = 20
+    self.collapse = 30
     self.direction = MOVEMENT_DIRECTIONS['UP']
 
   def get_direction(self, new_position):
@@ -38,21 +44,47 @@ class Pacman(MovingObject):
 
   def update(self, new_position):
     current_time = pygame.time.get_ticks()
-    self.direction = self.get_direction(new_position)
-
+    
+    # If we have a new target position different from current target
+    if new_position != self.target_position:
+      self.target_position = new_position
+      self.direction = self.get_direction(new_position)
+      self.is_moving = True
+    
     if current_time - self.time >= self.collapse:
       self.frame = (self.frame + 1) % len(self.animations[self.direction])
       self.time = current_time
     
-    self.position = new_position
+    if self.is_moving:
+      target_x = self.target_position[1] * CELL_SIZE
+      target_y = self.target_position[0] * CELL_SIZE
+      
+      dx = target_x - self.visual_x
+      dy = target_y - self.visual_y
+      
+      if abs(dx) <= self.speed and abs(dy) <= self.speed:
+        self.visual_x = target_x
+        self.visual_y = target_y
+        self.position = self.target_position
+        self.is_moving = False
+      else:
+        if dx > 0:
+          self.visual_x += min(self.speed, dx)
+        elif dx < 0:
+          self.visual_x -= min(self.speed, abs(dx))
+          
+        if dy > 0:
+          self.visual_y += min(self.speed, dy)
+        elif dy < 0:
+          self.visual_y -= min(self.speed, abs(dy))
 
   def draw(self, screen):
     if self.lives > 0:
       screen.blit(self.animations[self.direction][self.frame], 
-                  (self.position[1] * CELL_SIZE, self.position[0] * CELL_SIZE))
+                  (self.visual_x, self.visual_y))
     else:
-      rect = pygame.Rect(self.position[0] * CELL_SIZE, self.position[1] * CELL_SIZE, CELL_SIZE, CELL_SIZE)
-      pygame.draw.rect(screen, YELLOW, rect)
+      rect = pygame.Rect(self.visual_x, self.visual_y, CELL_SIZE, CELL_SIZE)
+      pygame.draw.circle(screen, YELLOW, rect.center, CELL_SIZE // 2)
 
   
 
@@ -76,9 +108,33 @@ class Ghost(MovingObject):
     return self.direction
 
   def update(self, new_position):
-    self.direction = self.get_direction(new_position)
-    self.position = new_position
+    if new_position != self.target_position:
+      self.target_position = new_position
+      self.direction = self.get_direction(new_position)
+      self.is_moving = True
+    
+    if self.is_moving:
+      target_x = self.target_position[1] * CELL_SIZE
+      target_y = self.target_position[0] * CELL_SIZE
+      
+      dx = target_x - self.visual_x
+      dy = target_y - self.visual_y
+      
+      if abs(dx) <= self.speed and abs(dy) <= self.speed:
+        self.visual_x = target_x
+        self.visual_y = target_y
+        self.position = self.target_position
+        self.is_moving = False
+      else:
+        if dx > 0:
+          self.visual_x += min(self.speed, dx)
+        elif dx < 0:
+          self.visual_x -= min(self.speed, abs(dx))
+          
+        if dy > 0:
+          self.visual_y += min(self.speed, dy)
+        elif dy < 0:
+          self.visual_y -= min(self.speed, abs(dy))
   
   def draw(self, screen):
-    screen.blit(self.animations[self.direction], (self.position[1] * CELL_SIZE, self.position[0] * CELL_SIZE))
-    
+    screen.blit(self.animations[self.direction], (self.visual_x, self.visual_y))
