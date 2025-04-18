@@ -31,9 +31,9 @@ def ucs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int]]
 
     for neighbor in maze.get_neighbors(current):
       if current == position and neighbor in restricted_cells:
-                continue
+        continue
       if neighbor in closed_set:
-                continue
+        continue
 
       tentative_g_score = g_score[current] + 1  
       if tentative_g_score < g_score.get(neighbor, float('inf')):

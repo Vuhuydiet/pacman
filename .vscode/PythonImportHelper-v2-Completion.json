@@ -970,7 +970,7 @@
         "kind": 2,
         "importPath": "src.utils.game_logic",
         "description": "src.utils.game_logic",
-        "peekOfCode": "def on_update(map: Map, pacman: Pacman, ghosts: list[Ghost]):\n  ghosts_next_positions = [ghost.position for ghost in ghosts]\n  total_expanded_nodes = 0\n  for ghost in ghosts:\n    next_position, expanded_nodes = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)\n    ghost.update(next_position)\n    ghosts_next_positions.append(next_position)\n    if expanded_nodes is not None:\n      total_expanded_nodes += expanded_nodes\n  new_pacman_position = pacman.moving_strategy(pacman.position, map)",
+        "peekOfCode": "def on_update(map: Map, pacman: Pacman, ghosts: list[Ghost]):\n  ghosts_next_positions = []\n  total_expanded_nodes = 0\n  for ghost in ghosts:\n    next_position, expanded_nodes = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)\n    ghost.update(next_position)\n    ghosts_next_positions.append(next_position)\n    if expanded_nodes is not None:\n      total_expanded_nodes += expanded_nodes\n  new_pacman_position = pacman.moving_strategy(pacman.position, map)",
         "detail": "src.utils.game_logic",
         "documentation": {}
     },
