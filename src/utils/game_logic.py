@@ -7,8 +7,11 @@ def on_update(map: Map, pacman: Pacman, ghosts: list[Ghost]):
   ghosts_next_positions = []
   total_expanded_nodes = 0
   for ghost in ghosts:
-    next_position, expanded_nodes = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions)
-    
+    next_position = ghost.target_position
+    expanded_nodes = 0
+    if ghost.target_position == ghost.position:
+      next_position, expanded_nodes = ghost.moving_strategy(ghost.position, pacman.position, map, ghosts_next_positions) 
+
     ghost.update(next_position)
     ghosts_next_positions.append(next_position)
     

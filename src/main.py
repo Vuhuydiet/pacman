@@ -1,3 +1,4 @@
+import pygame
 import time
 import tracemalloc
 from utils.pygame_renderer import PygameRenderer
@@ -72,6 +73,9 @@ def run_game(level):
     
     while is_running:
         keys = renderer.handle_events()
+        if keys[pygame.K_ESCAPE]:
+            is_running = False
+            break
         
         start_time = time.time()
         tracemalloc.start()

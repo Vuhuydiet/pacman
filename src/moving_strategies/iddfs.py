@@ -8,7 +8,7 @@ def iddfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int
   
   n_expanded_nodes = 0
   
-  def dfs(current, met_at, depth, limit) -> tuple[int, int]:
+  def dfs(current, visited, depth, limit) -> tuple[int, int]:
     if depth > limit:
       return None
 
@@ -17,24 +17,24 @@ def iddfs(position, pacman_pos, maze: Map, restricted_cells: list[tuple[int, int
 
     for d in DIRECTIONS.values():
       new_cell = add(current, d)
-      if not maze.contains_cell(new_cell) or met_at.get(new_cell, 1e9) <= depth + 1 or maze.is_wall(new_cell):
+      if not maze.contains_cell(new_cell) or new_cell in visited or maze.is_wall(new_cell):
         continue
       if depth == 0 and new_cell in restricted_cells:
         continue
 
+      visited.add(new_cell)
+      
       if new_cell == pacman_pos:
         return new_cell
       
-      met_at[new_cell] = depth + 1
-      result = dfs(new_cell, met_at, depth + 1, limit)
+      result = dfs(new_cell, visited, depth + 1, limit)
       if result is not None:
         return new_cell
     return None
 
-  for depth in range(1, maze.N * maze.M):
-    met_at = {}
-    met_at[position] = 0
-    res = dfs(position, met_at, 0, depth)
+  for max_depth in range(1, maze.N * maze.M):
+    visited = set()
+    res = dfs(position, visited, 0, max_depth)
     if res != None:
       return res, n_expanded_nodes
     
